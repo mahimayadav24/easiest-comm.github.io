@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Inter__Medium;
+    src: url('../Fonts/Inter/static/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: Inter__SemiBold;
+    src: url('../Fonts/Inter/static/Inter-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Inter__Bold;
+    src: url('../Fonts/Inter/static/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: Lato__Regular;
+    src: url('../Fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lato__Bold;
+    src: url('../Fonts/Lato/Lato-Bold.ttf');
+}
+
+/*the container must be positioned relative:*/
+
+.column-aside {
+    height: auto;
+    padding: 30px 80px;
+}
+
+.column-aside p {
+    font-family: 'Inter__SemiBold';
+    font-size: calc(10pt + 0.15vw);
+    letter-spacing: 0.03em;
+    color: rgba(40, 40, 40, 1);
+}
+
+.form-control:focus {
+    color: rgba(96, 95, 95, 1);
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(40, 40, 40, 1);
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-control {
+    border-color: rgba(40, 40, 40, 1);
+    padding: 12px;
+    color: rgba(96, 95, 95, 1);
+    margin: 8px 0px;
+    border-radius: 12px;
+    font-family: 'Inter__Medium';
+    font-size: calc(9pt + 0.15vw);
+    background: rgba(255, 255, 255, 1);
+}
+
+.column-aside .input__text {
+    color: rgba(40, 40, 40, 1);
+    font-family: 'Inter__SemiBold';
+    font-size: calc(9pt + 0.15vw);
+    margin: 50px 0px 10px 0px;
+}
+
+.column-aside label {
+    font-family: 'Inter__Medium';
+    font-size: calc(8pt + 0.15vw);
+}
+
+.column-aside button {
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    background: #041EAA;
+    color: rgba(255, 255, 255, 1);
+    float: right;
+    font-family: 'Inter__SemiBold';
+    font-size: calc(8pt + 0.15vw);
+    box-shadow: 0px 12px 20px rgba(53, 80, 226, 0.2);
+}
+
+.new__btn {
+    margin: 120px 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.new__btn button {
+    float: initial;
+    margin: 0px 10px;
+    width: 10%;
+    transition: .3s ease-in;
+    padding: 10px 0px;
+    box-shadow: 0px 12px 20px rgba(53, 80, 226, 0.2);
+}
+
+.new__btn button:hover {
+    background-color: rgba(210, 210, 210, 1);
+    color: rgba(128, 127, 127, 1);
+    transform: translateY(-3px);
+    transition: .3s ease-in;
+}
+
+@media screen and (max-width: 640px) {
+    .new__btn button {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .column-aside {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .wappere {
+        max-width: 1920px;
+    }
+}

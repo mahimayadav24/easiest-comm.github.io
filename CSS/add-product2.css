@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Inter__Medium;
+    src: url('../Fonts/Inter/static/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: Inter__SemiBold;
+    src: url('../Fonts/Inter/static/Inter-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Inter__Bold;
+    src: url('../Fonts/Inter/static/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: Lato__Regular;
+    src: url('../Fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lato__Bold;
+    src: url('../Fonts/Lato/Lato-Bold.ttf');
+}
+
+.form-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-item input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: rgba(244, 244, 244, 1);
+    border-radius: 12px;
+    transition: all .3s ease;
+    padding: 20px;
+    font-family: 'Inter__Medium';
+    font-size: calc(8pt + 0.15vw);
+    color: rgba(96, 95, 95, 1);
+}
+
+.form-item input:focus {
+    border-color: rgba(96, 95, 95, 1);
+    outline: none;
+    border: 1px dashed rgba(129, 129, 129, 1);
+    background-color: white;
+}
+
+.form-item label {
+    position: absolute;
+    z-index: 2;
+    top: 14px;
+    left: 10px;
+    font-size: calc(8pt + 0.15vw);
+    font-family: 'Inter__Medium';
+    background-color: rgba(244, 244, 244, 1);
+    padding: 0 10px;
+    color: rgba(96, 95, 95, 1);
+    transition: all .3s ease;
+    pointer-events: none;
+}
+
+.form-item input:focus+label, .form-item input:valid+label {
+    font-size: calc(8pt + 0.15vw);
+    top: -5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form-item input:focus+label {
+    color: rgba(96, 95, 95, 1);
+}
+
+.input__div__pr .form-control {
+    border: none;
+    background-color: rgba(244, 244, 244, 1);
+}
+
+.input__div__pr .form-control:focus {
+    border: 1px dashed rgba(129, 129, 129, 1);
+    background-color: white;
+}
+
+.input__div__pr input[type="text"] {
+    color: rgba(20, 68, 150, 1);
+}
+
+.input__div__pr .inpu_pr {
+    padding: 14px;
+    top: 7px;
+}
+
+@media screen and (min-width: 1400px) {
+    .wrapperc {
+        max-width: 1920px;
+    }
+}
