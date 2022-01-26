@@ -147,6 +147,7 @@ body, html {
     background-color: rgba(171, 202, 255, 1);
     border-radius: 50%;
     padding: 5px;
+    width: 43%;
 }
 
 .st__grid .step__two {
@@ -172,6 +173,7 @@ body, html {
     background-color: rgba(229, 229, 229, 1);
     border-radius: 40px;
     padding: 5px;
+    width: 43%;
 }
 
 .step__grid .box__shadow1 {
